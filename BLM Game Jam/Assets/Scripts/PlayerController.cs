@@ -17,6 +17,15 @@ public class PlayerController : MonoBehaviour
     public float checkGroundRadius;
     public LayerMask groundLayer;
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Collectible")) 
+        {
+            Destroy(other.gameObject);
+        }
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
