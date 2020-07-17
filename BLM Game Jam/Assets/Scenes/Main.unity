@@ -229,43 +229,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &438572716 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4496379812836024604, guid: 5b079f39bb36ea244920640c913c66a0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1105604789}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &438572717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 438572716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e01f88ab670aac76bc4fb6bd268c21a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 3
-  hearts: []
---- !u!114 &438572718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 438572716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e01f88ab670aac76bc4fb6bd268c21a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 3
-  hearts:
-  - {fileID: 569552572}
-  - {fileID: 635501225}
-  - {fileID: 1559256575}
 --- !u!114 &562068616 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8757333320433385303, guid: c294e50753e6e2e41b2238693ef1b623,
@@ -690,30 +653,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4496379812836024602, guid: 5b079f39bb36ea244920640c913c66a0,
-        type: 3}
-      propertyPath: m_SleepingMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4496379812836024602, guid: 5b079f39bb36ea244920640c913c66a0,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4496379812836024604, guid: 5b079f39bb36ea244920640c913c66a0,
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495558335146925564, guid: 5b079f39bb36ea244920640c913c66a0,
-        type: 3}
-      propertyPath: m_UsedByEffector
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495558335146925564, guid: 5b079f39bb36ea244920640c913c66a0,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b079f39bb36ea244920640c913c66a0, type: 3}

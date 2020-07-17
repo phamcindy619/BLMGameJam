@@ -27,7 +27,6 @@ public class PlayerController : MonoBehaviour
         }else if (other.gameObject.CompareTag("Obstacle")) 
         {
             hp.Damage();
-            Destroy(other.gameObject);
         }
     }
 
