@@ -8,6 +8,7 @@ public class CollectibleController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("oof");
         if (other.gameObject.CompareTag("Player")) 
         {
             ScoreManager.instance.addScore(pickupName, 1);

@@ -18,6 +18,15 @@ public class ScoreManager : MonoBehaviour
             scores = new Dictionary<string, int>();
         }
     }
+    
+    private void updateScoreBoard() {
+        string newScore = "";
+        foreach(var item in scores)
+        {
+            newScore += $"{item.Key} x {item.Value}";
+        }
+        text.text = newScore;
+    }
 
     public void addScore(string itemName, int incr)
     {
@@ -28,6 +37,6 @@ public class ScoreManager : MonoBehaviour
         }else {
             scores[itemName] = incr;
         } 
-        text.text = itemName + " " + scores[itemName].ToString();
+        updateScoreBoard();
     }
 }

@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Collectible")) 
+        if (other.gameObject.CompareTag("Collectibles")) 
         {
             Destroy(other.gameObject);
         }
