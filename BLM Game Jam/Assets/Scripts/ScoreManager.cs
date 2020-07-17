@@ -6,8 +6,15 @@ using TMPro;
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
-    public TextMeshProUGUI text;
     private Dictionary<string, int> scores;
+
+    private Dictionary<string, TextMeshProUGUI> textMeshes;
+
+    public TextMeshProUGUI MaskScore;
+    public TextMeshProUGUI SunscreenScore;
+    public TextMeshProUGUI HatScore;
+    public TextMeshProUGUI WaterScore;
+    public TextMeshProUGUI FoodScore;
 
     // Start is called before the first frame update
     void Start()
@@ -15,28 +22,40 @@ public class ScoreManager : MonoBehaviour
         if(instance == null)
         {
             instance = this;
-            scores = new Dictionary<string, int>();
+            scores = new Dictionary<string, int>
+            {
+                {"mask", 0 },
+                {"sunscreen", 0},
+                {"hat", 0},
+                {"water", 0},
+                {"food", 0},
+            };
+            
+            textMeshes = new Dictionary<string, TextMeshProUGUI>
+            {
+                {"mask", MaskScore},
+                {"sunscreen", SunscreenScore},
+                {"hat", HatScore},
+                {"water", WaterScore},
+                {"food", FoodScore},
+            };
         }
+
     }
     
-    private void updateScoreBoard() {
-        string newScore = "";
+    private void updateScoreBoard() 
+    {
         foreach(var item in scores)
         {
-            newScore += $"{item.Key} x {item.Value}";
+            Debug.Log(item.Key);
+            textMeshes[item.Key].text = $" x {item.Value}";
         }
-        text.text = newScore;
     }
 
     public void addScore(string itemName, int incr)
     {
-        int value;
-        if( scores.TryGetValue(itemName, out value) )
-        {
-            scores[itemName] = value + incr;
-        }else {
-            scores[itemName] = incr;
-        } 
+        int value = scores[itemName.ToLower()];
+        scores[itemName.ToLower()] = value + incr;
         updateScoreBoard();
     }
 }
