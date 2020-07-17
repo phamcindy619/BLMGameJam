@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     // Player's Rigidbody2D component
     private Rigidbody2D rb;
 
-    private int health = 3;
+    private HealthComponent hp;
 
     // Check whether player is not in the air
     bool isGrounded = false;
@@ -26,24 +26,12 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
         }else if (other.gameObject.CompareTag("Obstacle")) 
         {
-            Damage();
+            hp.Damage();
             Destroy(other.gameObject);
         }
     }
-    
-    public void Damage()
-    {
-        health--;
-        Debug.Log("ouchie meanie");
-        Debug.Log(health);
 
-        if ( health < 0)
-        {
-            Die();
-        }
-    }
-
-    private void Die()
+    public void Die()
     {
         Debug.Log("IM DEAD!!!");
     }
@@ -53,6 +41,7 @@ public class PlayerController : MonoBehaviour
     {
         // Get the player's Rigidbody2D
         rb = GetComponent<Rigidbody2D>();
+        hp = GetComponent<HealthComponent>();
     }
 
     // Update is called once per frame
