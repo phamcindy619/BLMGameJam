@@ -11,14 +11,11 @@ public class SoundManager : MonoBehaviour
     public AudioSource efxSource;
     // Singleton SoundManager
     public static SoundManager instance = null;
-    // Volume button
-    private Button volumeButton;
     // Toggle volume
     private bool volumeOn = true;
 
     void Start()
     {
-        volumeButton = GameObject.Find("VolumeButton").GetComponent<Button>();
         PlayMusic();
     }
 
@@ -50,15 +47,18 @@ public class SoundManager : MonoBehaviour
 
     public void ToggleSound()
     {
+        Button volumeButton = GameObject.Find("VolumeButton").GetComponent<Button>();
         if (volumeOn)
         {
             AudioListener.volume = 0;
             volumeOn = false;
+            volumeButton.GetComponent<Image>().color = Color.red;
         }
         else
         {
             AudioListener.volume = 1;
             volumeOn = true;
+            volumeButton.GetComponent<Image>().color = Color.green;
         }
     }
 }
