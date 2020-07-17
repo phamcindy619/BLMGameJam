@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
@@ -10,6 +11,16 @@ public class SoundManager : MonoBehaviour
     public AudioSource efxSource;
     // Singleton SoundManager
     public static SoundManager instance = null;
+    // Volume button
+    private Button volumeButton;
+    // Toggle volume
+    private bool volumeOn = true;
+
+    void Start()
+    {
+        volumeButton = GameObject.Find("VolumeButton").GetComponent<Button>();
+        PlayMusic();
+    }
 
     void Awake()
     {
@@ -32,9 +43,22 @@ public class SoundManager : MonoBehaviour
     }
 
     // Play background music
-    public void PlayMusic(AudioClip clip)
+    public void PlayMusic()
     {
-        musicSource.clip = clip;
         musicSource.Play();
+    }
+
+    public void ToggleSound()
+    {
+        if (volumeOn)
+        {
+            AudioListener.volume = 0;
+            volumeOn = false;
+        }
+        else
+        {
+            AudioListener.volume = 1;
+            volumeOn = true;
+        }
     }
 }
