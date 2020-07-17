@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class MenuController : MonoBehaviour
 
     void StartGame()
     {
-        Application.LoadLevel(1);
+        SceneManager.LoadScene(1);
     }
 
     void QuitGame()
