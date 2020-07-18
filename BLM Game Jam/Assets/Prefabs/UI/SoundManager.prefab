@@ -239,3 +239,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 8844529650128806073}
   efxSource: {fileID: 8844529650128806074}
+  volumeOnImage: {fileID: 21300000, guid: 584db343e45678e4cb34ea07cc82e81e, type: 3}
+  volumeOffImage: {fileID: 21300000, guid: aba9dbc08509e024a98a0135049f68c7, type: 3}
