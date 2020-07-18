@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8757333319651356071}
   - component: {fileID: 8757333319651356072}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: SunscreenImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,11 +30,11 @@ RectTransform:
   m_LocalScale: {x: 0.097239606, y: 0.097239606, z: 0.097239606}
   m_Children: []
   m_Father: {fileID: 8768771154843760479}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -238.1661, y: 136.01428}
+  m_AnchoredPosition: {x: 82, y: 0}
   m_SizeDelta: {x: 300, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8757333319651356071
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 8757333320239944437}
   - component: {fileID: 8757333320239944438}
   m_Layer: 5
-  m_Name: Masks score
+  m_Name: MaskScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104,11 +104,11 @@ RectTransform:
   m_LocalScale: {x: 1.1112, y: 1.1112, z: 1.2678403}
   m_Children: []
   m_Father: {fileID: 8768771154843760479}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -86.5661, y: 136.51428}
+  m_AnchoredPosition: {x: 234, y: 0}
   m_SizeDelta: {x: 50, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8757333320239944437
@@ -207,13 +207,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -1.1810743, w: -0.31720495}
   m_textInfo:
     textComponent: {fileID: 8757333320239944438}
-    characterCount: 0
+    characterCount: 4
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 0
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
-    lineCount: 0
-    pageCount: 0
+    lineCount: 1
+    pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 8757333320303206963}
   - component: {fileID: 8757333320303206964}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: MaskImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -260,11 +260,11 @@ RectTransform:
   m_LocalScale: {x: 0.097239606, y: 0.097239606, z: 0.097239606}
   m_Children: []
   m_Father: {fileID: 8768771154843760479}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -138.56613, y: 136.01428}
+  m_AnchoredPosition: {x: 178, y: 0}
   m_SizeDelta: {x: 597.2, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8757333320303206963
@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 8757333320433385302}
   - component: {fileID: 8757333320433385303}
   m_Layer: 5
-  m_Name: Sunscreen score
+  m_Name: SunscreenScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -334,11 +334,11 @@ RectTransform:
   m_LocalScale: {x: 1.1112, y: 1.1112, z: 1.2678403}
   m_Children: []
   m_Father: {fileID: 8768771154843760479}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200.46613, y: 136.51428}
+  m_AnchoredPosition: {x: 125, y: 0}
   m_SizeDelta: {x: 50, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8757333320433385302
@@ -437,13 +437,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -1.1810743, w: -0.31720495}
   m_textInfo:
     textComponent: {fileID: 8757333320433385303}
-    characterCount: 0
+    characterCount: 4
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 0
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
-    lineCount: 0
-    pageCount: 0
+    lineCount: 1
+    pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -490,11 +490,11 @@ RectTransform:
   m_LocalScale: {x: 1.1112, y: 1.1112, z: 1.2678403}
   m_Children: []
   m_Father: {fileID: 8768771154843760479}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -275.46613, y: 136.51428}
+  m_AnchoredPosition: {x: 43, y: 0}
   m_SizeDelta: {x: 50, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8757333320511404485
@@ -593,13 +593,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -1.1810743, w: -0.31720495}
   m_textInfo:
     textComponent: {fileID: 8757333320511404486}
-    characterCount: 0
+    characterCount: 4
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 0
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
-    lineCount: 0
-    pageCount: 0
+    lineCount: 1
+    pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -628,7 +628,7 @@ GameObject:
   - component: {fileID: 8757333320760224421}
   - component: {fileID: 8757333320760224422}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: HatImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -646,11 +646,11 @@ RectTransform:
   m_LocalScale: {x: 0.097239606, y: 0.097239606, z: 0.097239606}
   m_Children: []
   m_Father: {fileID: 8768771154843760479}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -26.866112, y: 136.01428}
+  m_AnchoredPosition: {x: 286.7, y: 0}
   m_SizeDelta: {x: 597.2, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8757333320760224421
@@ -720,11 +720,11 @@ RectTransform:
   m_LocalScale: {x: 1.1112, y: 1.1112, z: 1.2678403}
   m_Children: []
   m_Father: {fileID: 8768771154843760479}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 153.73389, y: 136.51428}
+  m_AnchoredPosition: {x: 456, y: 0}
   m_SizeDelta: {x: 50, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8757333320783962397
@@ -823,13 +823,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -1.1810743, w: -0.31720495}
   m_textInfo:
     textComponent: {fileID: 8757333320783962398}
-    characterCount: 0
+    characterCount: 4
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 0
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
-    lineCount: 0
-    pageCount: 0
+    lineCount: 1
+    pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -858,7 +858,7 @@ GameObject:
   - component: {fileID: 8757333320804438525}
   - component: {fileID: 8757333320804438526}
   m_Layer: 5
-  m_Name: Image
+  m_Name: WaterImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -876,11 +876,11 @@ RectTransform:
   m_LocalScale: {x: 0.097239606, y: 0.097239606, z: 0.097239606}
   m_Children: []
   m_Father: {fileID: 8768771154843760479}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -320.7661, y: 136.01428}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 300, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8757333320804438525
@@ -932,7 +932,7 @@ GameObject:
   - component: {fileID: 8757333321021836251}
   - component: {fileID: 8757333321021836252}
   m_Layer: 5
-  m_Name: Image (4)
+  m_Name: FoodImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -950,11 +950,11 @@ RectTransform:
   m_LocalScale: {x: 0.097239606, y: 0.097239606, z: 0.097239606}
   m_Children: []
   m_Father: {fileID: 8768771154843760479}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 98.13389, y: 136.01428}
+  m_AnchoredPosition: {x: 398.59998, y: 0}
   m_SizeDelta: {x: 597.2, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8757333321021836251
@@ -1006,7 +1006,7 @@ GameObject:
   - component: {fileID: 8757333321072227972}
   - component: {fileID: 8757333321072227973}
   m_Layer: 5
-  m_Name: Hats Score
+  m_Name: HatScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1024,11 +1024,11 @@ RectTransform:
   m_LocalScale: {x: 1.1112, y: 1.1112, z: 1.2678403}
   m_Children: []
   m_Father: {fileID: 8768771154843760479}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32.533886, y: 136.51428}
+  m_AnchoredPosition: {x: 345.1, y: 0}
   m_SizeDelta: {x: 50, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8757333321072227972
@@ -1058,7 +1058,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x 0
+  m_text: ' x 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1127,13 +1127,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -1.1810743, w: -0.31720495}
   m_textInfo:
     textComponent: {fileID: 8757333321072227973}
-    characterCount: 0
+    characterCount: 4
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 0
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
-    lineCount: 0
-    pageCount: 0
+    lineCount: 1
+    pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -1177,21 +1177,21 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8757333320511404484}
   - {fileID: 8757333320804438527}
-  - {fileID: 8757333320433385304}
+  - {fileID: 8757333320511404484}
   - {fileID: 8757333319651356073}
+  - {fileID: 8757333320433385304}
+  - {fileID: 8757333320303206965}
   - {fileID: 8757333320239944439}
   - {fileID: 8757333320760224423}
   - {fileID: 8757333321072227974}
-  - {fileID: 8757333320303206965}
-  - {fileID: 8757333320783962399}
   - {fileID: 8757333321021836253}
+  - {fileID: 8757333320783962399}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 274, y: -154}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
