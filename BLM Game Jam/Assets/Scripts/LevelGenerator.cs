@@ -19,7 +19,7 @@ public class LevelGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(cameraObj.transform.position.x + 20.0f, transform.position.y, 0);
+        transform.position = new Vector3(cameraObj.transform.position.x + 40.0f, transform.position.y, 0);
     }
 
     // Spawn a random object from list
