@@ -25,8 +25,9 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Collectibles")) 
         {
-            Destroy(other.gameObject);
-        }else if (other.gameObject.CompareTag("Obstacle")) 
+            other.gameObject.SetActive(false);
+        }
+        else if (other.gameObject.CompareTag("Obstacle")) 
         {
             hp.Damage();
         }

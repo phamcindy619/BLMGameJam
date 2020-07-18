@@ -1102,6 +1102,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!1 &1896509080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3006483420717403320, guid: 8def714b51f3818468c8f098a6338290,
+    type: 3}
+  m_PrefabInstance: {fileID: 3006483418926526086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1896509081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896509080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98b8e4be93e0ef44f9286fa8a66fb2b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjects: []
+  objectsToPool:
+  - {fileID: 1179347550285266962, guid: 25710b8bb888e5a418b7e26157073b52, type: 3}
+  - {fileID: 1486863501796600695, guid: f972a62e857bb2ac2b27d3c256d10e6f, type: 3}
+  - {fileID: 3468015459456699522, guid: 06b022af77fb3ec1d8c3b5429fda07d6, type: 3}
+  - {fileID: 8423480511155329644, guid: 36f8954c8768fa992a414ef5452fa251, type: 3}
+  - {fileID: 3970838509296677373, guid: c00ee0f63c4132d60bc91e3bba9c4027, type: 3}
+  - {fileID: 5231915728214441051, guid: 15ad9fb497f6d043ab92aefa4950f7d1, type: 3}
+  - {fileID: 2976534251130295213, guid: 00f5dfd6cb929e5e799e4d3dd8739def, type: 3}
+  - {fileID: 6359425412924181992, guid: 831693dad98d8d1a0a7533eb086bfd77, type: 3}
+  - {fileID: 1351887340722231806, guid: 258a061aad6158f57b062cb5f250066f, type: 3}
+  - {fileID: 5323858215194904924, guid: 62491e49463303d09bd24f0b1240a894, type: 3}
+  - {fileID: 5033692139726405944, guid: 36178eedb812215af9f20bc07482a302, type: 3}
+  amountToPool: 1
 --- !u!1 &1912820516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,7 +1272,7 @@ PrefabInstance:
     - target: {fileID: 3006483420717403321, guid: 8def714b51f3818468c8f098a6338290,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3006483420717403321, guid: 8def714b51f3818468c8f098a6338290,
         type: 3}
@@ -1336,7 +1368,7 @@ PrefabInstance:
     - target: {fileID: 3006483420717403334, guid: 8def714b51f3818468c8f098a6338290,
         type: 3}
       propertyPath: spawnTime
-      value: 3
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 3006483420717403334, guid: 8def714b51f3818468c8f098a6338290,
         type: 3}

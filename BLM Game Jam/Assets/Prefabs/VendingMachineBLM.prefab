@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3383802975797773737}
   - component: {fileID: 5770740841418939102}
   - component: {fileID: 4182469818979282094}
+  - component: {fileID: -343981759240232834}
   m_Layer: 0
   m_Name: VendingMachineBLM
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,3 +131,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!114 &-343981759240232834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351887340722231806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62697985b070cb046bda2a3111064aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

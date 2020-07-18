@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6364966937760075979}
   - component: {fileID: 2652549226625027125}
   - component: {fileID: 1760307287286971068}
+  - component: {fileID: -1185809360760260649}
   m_Layer: 0
   m_Name: Energy Bar
   m_TagString: Collectibles
@@ -144,3 +145,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!114 &-1185809360760260649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179347550285266962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62697985b070cb046bda2a3111064aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
