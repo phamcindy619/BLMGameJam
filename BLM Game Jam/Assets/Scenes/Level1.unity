@@ -195,12 +195,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17130763}
   m_CullTransparentMesh: 0
---- !u!4 &72960306 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8757333321084024044, guid: c294e50753e6e2e41b2238693ef1b623,
-    type: 3}
-  m_PrefabInstance: {fileID: 191731687}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &191731687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -485,7 +479,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 72960306}
+  - {fileID: 1237710382}
   - {fileID: 1987897508}
   - {fileID: 716011930}
   - {fileID: 589612794}
@@ -826,6 +820,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899944237}
   m_CullTransparentMesh: 0
+--- !u!224 &1237710382 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8768771154843760479, guid: c294e50753e6e2e41b2238693ef1b623,
+    type: 3}
+  m_PrefabInstance: {fileID: 191731687}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1297329071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -833,10 +833,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 438572717, guid: 5b079f39bb36ea244920640c913c66a0, type: 3}
-      propertyPath: hearts.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 438572717, guid: 5b079f39bb36ea244920640c913c66a0, type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
@@ -904,11 +900,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4496379812836024600, guid: 5b079f39bb36ea244920640c913c66a0,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 4496379812836024604, guid: 5b079f39bb36ea244920640c913c66a0,
         type: 3}
       propertyPath: m_Name
@@ -916,26 +907,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4496379812836024605, guid: 5b079f39bb36ea244920640c913c66a0,
         type: 3}
-      propertyPath: jumpForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4496379812836024605, guid: 5b079f39bb36ea244920640c913c66a0,
-        type: 3}
-      propertyPath: fallMultiplier
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4496379812836024605, guid: 5b079f39bb36ea244920640c913c66a0,
-        type: 3}
-      propertyPath: lowJumpMultiplier
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4496379812836024605, guid: 5b079f39bb36ea244920640c913c66a0,
-        type: 3}
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 589612793}
-    m_RemovedComponents:
-    - {fileID: 438572718, guid: 5b079f39bb36ea244920640c913c66a0, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b079f39bb36ea244920640c913c66a0, type: 3}
 --- !u!1 &1407424618
 GameObject:
