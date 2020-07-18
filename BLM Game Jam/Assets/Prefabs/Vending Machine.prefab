@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4559073346613515462}
   - component: {fileID: -4971816153908566883}
   - component: {fileID: 3399578119593969566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Vending Machine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6359425412924181992}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.04, y: 2.4, z: -10.8515625}
+  m_LocalPosition: {x: 22.04, y: 2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

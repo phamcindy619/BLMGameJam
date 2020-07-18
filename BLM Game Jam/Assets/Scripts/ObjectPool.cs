@@ -5,8 +5,8 @@ using UnityEngine;
 public class ObjectPool : MonoBehaviour
 {
     public static ObjectPool instance = null;
-    [HideInInspector]
-    public List<GameObject> pooledObjects;
+
+    private List<GameObject> pooledObjects;
     public List<GameObject> objectsToPool;
     // Number of each objects to pre-instantiate
     public int amountToPool = 1;

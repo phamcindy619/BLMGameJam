@@ -47,7 +47,6 @@ public class ScoreManager : MonoBehaviour
     {
         foreach(var item in scores)
         {
-            Debug.Log(item.Key);
             textMeshes[item.Key].text = $" x {item.Value}";
         }
     }
