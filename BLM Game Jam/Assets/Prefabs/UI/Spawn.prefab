@@ -43,7 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f31a7870bc3f3c74fa60327e56009391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objects:
-  - {fileID: 8423480511155329644, guid: 36f8954c8768fa992a414ef5452fa251, type: 3}
-  - {fileID: 5033692139726405944, guid: 36178eedb812215af9f20bc07482a302, type: 3}
-  spawnTime: 2
+  spawnTime: 3.5
+  spawnDistance: 30

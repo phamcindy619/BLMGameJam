@@ -83,6 +83,12 @@ public class PlayerController : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal");
         float movement = x * speed;
         rb.velocity = new Vector2(movement, rb.velocity.y);
+        
+        // Flip sprite
+        if (rb.velocity.x < 0)
+            GetComponent<SpriteRenderer>().flipX = true;
+        else
+            GetComponent<SpriteRenderer>().flipX = false;
     }
 
     void Jump()
