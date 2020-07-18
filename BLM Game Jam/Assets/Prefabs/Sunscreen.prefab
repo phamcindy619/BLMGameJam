@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 165533785447591993}
   - component: {fileID: 4133973891573593321}
   - component: {fileID: -6929267755040337208}
+  - component: {fileID: 6550052497942714158}
   m_Layer: 0
   m_Name: Sunscreen
   m_TagString: Collectibles
@@ -144,3 +145,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!114 &6550052497942714158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5231915728214441051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62697985b070cb046bda2a3111064aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

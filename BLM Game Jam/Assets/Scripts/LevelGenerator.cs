@@ -4,30 +4,31 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
-    // List of objects to spawn
-    public GameObject[] objects;
     // Time between each object spawn
     public float spawnTime;
-    // Player GameObject
-    private GameObject player;
+    // Camera GameObject
+    private GameObject cameraObj;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindWithTag("Player");
+        cameraObj = GameObject.Find("Main Camera");
         InvokeRepeating("Spawn", 2.0f, spawnTime);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(player.transform.position.x + 12.0f, transform.position.y, transform.position.z);
+        transform.position = new Vector3(cameraObj.transform.position.x + 20.0f, transform.position.y, 0);
     }
 
     // Spawn a random object from list
     void Spawn()
     {
-        Instantiate(objects[Random.Range(0, objects.Length)], transform.position, Quaternion.identity);
+        GameObject obj = ObjectPool.instance.GetRandomPooledObject();
+        obj.transform.position = transform.position;
+        obj.transform.rotation = Quaternion.identity;
+        obj.SetActive(true);
     }
 }
 

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -21,21 +23,8 @@ public class PlayerController : MonoBehaviour
     public float checkGroundRadius;
     public LayerMask groundLayer;
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Collectibles")) 
-        {
-            Destroy(other.gameObject);
-        }else if (other.gameObject.CompareTag("Obstacle")) 
-        {
-            hp.Damage();
-        }
-    }
-
-    public void Die()
-    {
-        Debug.Log("IM DEAD!!!");
-    }
+    // Game over
+    public GameObject gameOverPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +32,7 @@ public class PlayerController : MonoBehaviour
         // Get the player's Rigidbody2D
         rb = GetComponent<Rigidbody2D>();
         hp = GetComponent<HealthComponent>();
+        gameOverPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -51,6 +41,38 @@ public class PlayerController : MonoBehaviour
         Move();
         CheckIfGrounded();
         Jump();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Collectibles")) 
+        {
+            other.gameObject.SetActive(false);
+        }
+        else if (other.gameObject.CompareTag("Obstacle")) 
+        {
+            hp.Damage();
+        }
+    }
+
+    void OnBecameInvisible()
+    {
+        Die();
+    }
+
+    public void Die()
+    {
+        Debug.Log("IM DEAD!!!");
+        gameOverPanel.SetActive(true);
+
+        // Go back to main menu after death
+        Button resetButton = gameOverPanel.transform.GetChild(1).gameObject.GetComponent<Button>();
+        resetButton.onClick.AddListener(ResetGame);
+    }
+
+    void ResetGame()
+    {
+        SceneManager.LoadScene(0);
     }
 
     void Move() 
