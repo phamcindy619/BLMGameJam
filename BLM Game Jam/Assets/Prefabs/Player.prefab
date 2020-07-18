@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 6495558335146925564}
   - component: {fileID: 1939182022}
   - component: {fileID: 438572717}
+  - component: {fileID: -6436591769420174077}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -155,11 +156,12 @@ MonoBehaviour:
   fallMultiplier: 3.5
   lowJumpMultiplier: 3
   isGroundedChecker: {fileID: 7354125096332683211}
-  checkGroundRadius: 2
+  checkGroundRadius: 1
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
-  gameOverPanel: {fileID: 0}
+  gameOverPanel: {fileID: 1561361174019881006, guid: 1ed079d06a1e0244b97bbdbc05d87846,
+    type: 3}
 --- !u!61 &6495558335146925564
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -199,9 +201,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.044445217, y: 0}
+  m_Offset: {x: -0.05, y: 0.041493323}
   serializedVersion: 2
-  m_Radius: 0.12444514
+  m_Radius: 0.27468643
 --- !u!114 &438572717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,3 +218,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   hearts: []
+--- !u!95 &-6436591769420174077
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4496379812836024604}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 107260ae188e112beb02904ec5c0fb4f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

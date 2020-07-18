@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public float fallMultiplier = 3.5f;
     public float lowJumpMultiplier = 3f;
+    // Player's Animator
+    private Animator animator;
     // Player's Rigidbody2D component
     private Rigidbody2D rb;
 
@@ -31,6 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         // Get the player's Rigidbody2D
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         hp = GetComponent<HealthComponent>();
         gameOverPanel.SetActive(false);
     }
@@ -98,8 +101,14 @@ public class PlayerController : MonoBehaviour
         Collider2D col = Physics2D.OverlapCircle(isGroundedChecker.position, checkGroundRadius, groundLayer);
 
         if (col != null)
+        {
             isGrounded = true;
+            animator.SetBool("isGround", true);
+        }
         else
+        {
             isGrounded = false;
+            animator.SetBool("isGround", false);
+        }
     }
 }
