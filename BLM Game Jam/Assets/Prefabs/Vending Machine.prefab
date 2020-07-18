@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 8060936929916804295}
   - component: {fileID: 660283774149201688}
   - component: {fileID: 4559073346613515462}
+  - component: {fileID: -4971816153908566883}
   m_Layer: 0
   m_Name: Vending Machine
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,3 +109,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.29, y: 4.8009453}
   m_EdgeRadius: 0
+--- !u!50 &-4971816153908566883
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6359425412924181992}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 5

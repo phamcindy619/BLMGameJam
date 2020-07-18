@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public float speed;
     // Player's jump force
     public float jumpForce;
+    public float fallMultiplier = 3.5f;
+    public float lowJumpMultiplier = 3f;
     // Player's Rigidbody2D component
     private Rigidbody2D rb;
 
@@ -61,10 +63,12 @@ public class PlayerController : MonoBehaviour
     void Jump()
     {
         if (Input.GetKeyDown(KeyCode.W) && isGrounded)
-        {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            Debug.Log("Jumping");
-        }
+
+        if (rb.velocity.y < 0)
+            rb.velocity += Vector2.up * Physics2D.gravity * (fallMultiplier - 1) * Time.deltaTime;
+        else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.W))
+            rb.velocity += Vector2.up * Physics2D.gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
     }
 
     void CheckIfGrounded()

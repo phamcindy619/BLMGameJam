@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 286653471969549869}
   - component: {fileID: 6364966937760075979}
   - component: {fileID: 2652549226625027125}
+  - component: {fileID: 1760307287286971068}
   m_Layer: 0
   m_Name: Energy Bar
   m_TagString: Collectibles
@@ -122,3 +123,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupName: food
+--- !u!50 &1760307287286971068
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179347550285266962}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 5
