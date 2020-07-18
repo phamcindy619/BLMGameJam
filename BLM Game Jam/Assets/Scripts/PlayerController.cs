@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
     public float checkGroundRadius;
     public LayerMask groundLayer;
 
+    public GameManager manager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,7 +64,7 @@ public class PlayerController : MonoBehaviour
     public void Die()
     {
         Debug.Log("IM DEAD!!!");
-        GameManager.instance.GameOver();
+        manager.GameOver();
     }
 
     void Move() 

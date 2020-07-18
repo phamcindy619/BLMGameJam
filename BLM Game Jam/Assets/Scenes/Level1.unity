@@ -1160,7 +1160,7 @@ PrefabInstance:
     - target: {fileID: 4496379812836024603, guid: 5b079f39bb36ea244920640c913c66a0,
         type: 3}
       propertyPath: m_SortingLayer
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4496379812836024604, guid: 5b079f39bb36ea244920640c913c66a0,
         type: 3}
@@ -1177,6 +1177,11 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4496379812836024605, guid: 5b079f39bb36ea244920640c913c66a0,
+        type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1857187777}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b079f39bb36ea244920640c913c66a0, type: 3}
 --- !u!1001 &1301760235

@@ -7,25 +7,12 @@ public class GameManager : MonoBehaviour
 {
     public GameObject prologuePanel;
     public GameObject gameOverPanel;
-    public static GameManager instance = null;
-
-    void Start()
-    {
-        gameOverPanel.SetActive(false);
-        OpenPrologue();
-    }
 
     void Awake()
     {
-        // Check if there is another SoundManager
-        if (instance == null)
-            instance = this;
-        // Destroy any duplicate
-        else if (instance != this)
-            Destroy(gameObject);
-        
-        // Don't destroy SoundManager when reloading the scene
-        DontDestroyOnLoad(gameObject);
+        Time.timeScale = 1;
+        gameOverPanel.SetActive(false);
+        OpenPrologue();
     }
 
     void OpenPrologue()
@@ -51,8 +38,4 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void FinishGame()
-    {
-        Debug.Log("Game Finished!");
-    }
 }

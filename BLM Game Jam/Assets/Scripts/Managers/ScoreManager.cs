@@ -63,7 +63,7 @@ public class ScoreManager : MonoBehaviour
         }
         // End game if scores reached
         if (CheckIfFinish())
-            GameManager.instance.FinishGame();
+            FinishGame();
     }
 
     public void addScore(string itemName, int incr)
@@ -82,5 +82,10 @@ public class ScoreManager : MonoBehaviour
                 return false;
         }
         return true;
+    }
+
+    void FinishGame()
+    {
+        Debug.Log("Game Finished!");
     }
 }
