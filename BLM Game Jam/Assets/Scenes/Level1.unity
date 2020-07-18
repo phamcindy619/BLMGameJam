@@ -1295,7 +1295,7 @@ PrefabInstance:
     - target: {fileID: 3006483420717403334, guid: 8def714b51f3818468c8f098a6338290,
         type: 3}
       propertyPath: objects.Array.size
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3006483420717403334, guid: 8def714b51f3818468c8f098a6338290,
         type: 3}
@@ -1325,19 +1325,43 @@ PrefabInstance:
         type: 3}
       propertyPath: objects.Array.data[6]
       value: 
-      objectReference: {fileID: 5231915728214441051, guid: 15ad9fb497f6d043ab92aefa4950f7d1,
+      objectReference: {fileID: 3970838509296677373, guid: c00ee0f63c4132d60bc91e3bba9c4027,
         type: 3}
     - target: {fileID: 3006483420717403334, guid: 8def714b51f3818468c8f098a6338290,
         type: 3}
       propertyPath: objects.Array.data[7]
       value: 
-      objectReference: {fileID: 5231915728214441051, guid: 15ad9fb497f6d043ab92aefa4950f7d1,
+      objectReference: {fileID: 2976534251130295213, guid: 00f5dfd6cb929e5e799e4d3dd8739def,
         type: 3}
     - target: {fileID: 3006483420717403334, guid: 8def714b51f3818468c8f098a6338290,
         type: 3}
       propertyPath: spawnTime
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3006483420717403334, guid: 8def714b51f3818468c8f098a6338290,
+        type: 3}
+      propertyPath: objects.Array.data[8]
+      value: 
+      objectReference: {fileID: 6359425412924181992, guid: 831693dad98d8d1a0a7533eb086bfd77,
+        type: 3}
+    - target: {fileID: 3006483420717403334, guid: 8def714b51f3818468c8f098a6338290,
+        type: 3}
+      propertyPath: objects.Array.data[9]
+      value: 
+      objectReference: {fileID: 1351887340722231806, guid: 258a061aad6158f57b062cb5f250066f,
+        type: 3}
+    - target: {fileID: 3006483420717403334, guid: 8def714b51f3818468c8f098a6338290,
+        type: 3}
+      propertyPath: objects.Array.data[10]
+      value: 
+      objectReference: {fileID: 5323858215194904924, guid: 62491e49463303d09bd24f0b1240a894,
+        type: 3}
+    - target: {fileID: 3006483420717403334, guid: 8def714b51f3818468c8f098a6338290,
+        type: 3}
+      propertyPath: objects.Array.data[0]
+      value: 
+      objectReference: {fileID: 5323858215194904924, guid: 62491e49463303d09bd24f0b1240a894,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8def714b51f3818468c8f098a6338290, type: 3}
 --- !u!1001 &5655958408503972643
