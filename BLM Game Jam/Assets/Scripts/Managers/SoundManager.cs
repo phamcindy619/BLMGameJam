@@ -14,6 +14,10 @@ public class SoundManager : MonoBehaviour
     // Toggle volume
     private bool volumeOn = true;
 
+    // Images
+    public Sprite volumeOnImage;
+    public Sprite volumeOffImage;
+
     void Start()
     {
         PlayMusic();
@@ -52,13 +56,13 @@ public class SoundManager : MonoBehaviour
         {
             AudioListener.volume = 0;
             volumeOn = false;
-            volumeButton.GetComponent<Image>().color = Color.red;
+            volumeButton.GetComponent<Image>().sprite = volumeOffImage;
         }
         else
         {
             AudioListener.volume = 1;
             volumeOn = true;
-            volumeButton.GetComponent<Image>().color = Color.green;
+            volumeButton.GetComponent<Image>().sprite = volumeOnImage;
         }
     }
 }

@@ -66,14 +66,11 @@ public class PlayerController : MonoBehaviour
     public void Die()
     {
         Debug.Log("IM DEAD!!!");
+        Time.timeScale = 0;
         gameOverPanel.SetActive(true);
-
-        // Go back to main menu after death
-        Button resetButton = gameOverPanel.transform.GetChild(1).gameObject.GetComponent<Button>();
-        resetButton.onClick.AddListener(ResetGame);
     }
 
-    void ResetGame()
+    public void ResetGame()
     {
         SceneManager.LoadScene(0);
     }
