@@ -25,9 +25,6 @@ public class PlayerController : MonoBehaviour
     public float checkGroundRadius;
     public LayerMask groundLayer;
 
-    // Game over
-    public GameObject gameOverPanel;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +32,6 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         hp = GetComponent<HealthComponent>();
-        gameOverPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -66,13 +62,7 @@ public class PlayerController : MonoBehaviour
     public void Die()
     {
         Debug.Log("IM DEAD!!!");
-        Time.timeScale = 0;
-        gameOverPanel.SetActive(true);
-    }
-
-    public void ResetGame()
-    {
-        SceneManager.LoadScene(0);
+        GameManager.instance.GameOver();
     }
 
     void Move() 

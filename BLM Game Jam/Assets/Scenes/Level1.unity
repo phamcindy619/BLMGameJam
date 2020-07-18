@@ -1179,18 +1179,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b079f39bb36ea244920640c913c66a0, type: 3}
---- !u!114 &1149559317 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4496379812836024605, guid: 5b079f39bb36ea244920640c913c66a0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1149559316}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809460335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e50430b5114b35e4cb237b8aa0308f27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1301760235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1376,13 +1364,13 @@ PrefabInstance:
     - target: {fileID: 5253720034929374347, guid: 1ed079d06a1e0244b97bbdbc05d87846,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5253720034929374347, guid: 1ed079d06a1e0244b97bbdbc05d87846,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1149559317}
+      objectReference: {fileID: 1857187777}
     - target: {fileID: 5253720034929374347, guid: 1ed079d06a1e0244b97bbdbc05d87846,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1908,6 +1896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prologuePanel: {fileID: 365540046}
+  gameOverPanel: {fileID: 1301760237}
 --- !u!1 &1896509080 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3006483420717403320, guid: 8def714b51f3818468c8f098a6338290,
