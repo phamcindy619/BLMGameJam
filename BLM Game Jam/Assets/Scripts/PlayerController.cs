@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -21,6 +23,26 @@ public class PlayerController : MonoBehaviour
     public float checkGroundRadius;
     public LayerMask groundLayer;
 
+    // Game over
+    public GameObject gameOverPanel;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        // Get the player's Rigidbody2D
+        rb = GetComponent<Rigidbody2D>();
+        hp = GetComponent<HealthComponent>();
+        gameOverPanel.SetActive(false);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        Move();
+        CheckIfGrounded();
+        Jump();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Collectibles")) 
@@ -33,25 +55,24 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void OnBecameInvisible()
+    {
+        Die();
+    }
+
     public void Die()
     {
         Debug.Log("IM DEAD!!!");
+        gameOverPanel.SetActive(true);
+
+        // Go back to main menu after death
+        Button resetButton = gameOverPanel.transform.GetChild(1).gameObject.GetComponent<Button>();
+        resetButton.onClick.AddListener(ResetGame);
     }
 
-    // Start is called before the first frame update
-    void Start()
+    void ResetGame()
     {
-        // Get the player's Rigidbody2D
-        rb = GetComponent<Rigidbody2D>();
-        hp = GetComponent<HealthComponent>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Move();
-        CheckIfGrounded();
-        Jump();
+        SceneManager.LoadScene(0);
     }
 
     void Move() 
