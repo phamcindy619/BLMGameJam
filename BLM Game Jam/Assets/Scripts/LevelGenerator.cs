@@ -6,6 +6,8 @@ public class LevelGenerator : MonoBehaviour
 {
     // Time between each object spawn
     public float spawnTime;
+    // Distance away from player to spawn
+    public float spawnDistance;
     // Camera GameObject
     private GameObject cameraObj;
 
@@ -19,7 +21,7 @@ public class LevelGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(cameraObj.transform.position.x + 20.0f, transform.position.y, 0);
+        transform.position = new Vector3(cameraObj.transform.position.x + spawnDistance, transform.position.y, 0);
     }
 
     // Spawn a random object from list
