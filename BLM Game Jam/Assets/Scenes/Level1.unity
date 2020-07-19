@@ -1307,6 +1307,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4496379812836024600, guid: 5b079f39bb36ea244920640c913c66a0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496379812836024600, guid: 5b079f39bb36ea244920640c913c66a0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 4496379812836024604, guid: 5b079f39bb36ea244920640c913c66a0,
         type: 3}
       propertyPath: m_Name
@@ -1321,6 +1331,21 @@ PrefabInstance:
         type: 3}
       propertyPath: prologueTime
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496379812836024605, guid: 5b079f39bb36ea244920640c913c66a0,
+        type: 3}
+      propertyPath: jumpForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496379812836024605, guid: 5b079f39bb36ea244920640c913c66a0,
+        type: 3}
+      propertyPath: fallMultiplier
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496379812836024605, guid: 5b079f39bb36ea244920640c913c66a0,
+        type: 3}
+      propertyPath: lowJumpMultiplier
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b079f39bb36ea244920640c913c66a0, type: 3}
@@ -3078,7 +3103,7 @@ PrefabInstance:
     - target: {fileID: 3006483420717403334, guid: 8def714b51f3818468c8f098a6338290,
         type: 3}
       propertyPath: spawnTime
-      value: 12
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3006483420717403334, guid: 8def714b51f3818468c8f098a6338290,
         type: 3}
