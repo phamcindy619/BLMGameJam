@@ -8,6 +8,8 @@ public class LevelGenerator : MonoBehaviour
     public float spawnTime;
     // Distance away from player to spawn
     public float spawnDistance;
+    // Time until objects begin spawning
+    public float spawnDelay;
     // Camera GameObject
     private GameObject cameraObj;
 
@@ -15,7 +17,7 @@ public class LevelGenerator : MonoBehaviour
     void Start()
     {
         cameraObj = GameObject.Find("Main Camera");
-        InvokeRepeating("Spawn", 12.0f, spawnTime);
+        InvokeRepeating("Spawn", spawnDelay, spawnTime);
     }
 
     // Update is called once per frame
