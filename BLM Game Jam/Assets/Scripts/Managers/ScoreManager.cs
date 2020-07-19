@@ -36,16 +36,11 @@ public class ScoreManager : MonoBehaviour
 
             endScores = new Dictionary<string, int>
             {
-                // {"mask", 7},
-                // {"sunscreen", 15},
-                // {"hat", 7},
-                // {"water", 15},
-                // {"food", 15},
-                {"mask", 1},
-                {"sunscreen", 1},
-                {"hat", 1},
-                {"water", 1},
-                {"food", 1},
+                {"mask", 7},
+                {"sunscreen", 15},
+                {"hat", 7},
+                {"water", 15},
+                {"food", 15},
             };
             
             textMeshes = new Dictionary<string, TextMeshProUGUI>
