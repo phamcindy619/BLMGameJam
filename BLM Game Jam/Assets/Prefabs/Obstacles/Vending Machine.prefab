@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8060936929916804295}
   - component: {fileID: 660283774149201688}
-  - component: {fileID: 4559073346613515462}
   - component: {fileID: -4971816153908566883}
   - component: {fileID: 3399578119593969566}
+  - component: {fileID: 7844287289863701051}
   m_Layer: 8
   m_Name: Vending Machine
   m_TagString: Untagged
@@ -84,32 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4559073346613515462
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6359425412924181992}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.17547274}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 7}
-    newSize: {x: 5, y: 7}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.29, y: 4.8009453}
-  m_EdgeRadius: 0
 --- !u!50 &-4971816153908566883
 Rigidbody2D:
   serializedVersion: 4
@@ -121,7 +95,7 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
+  m_UseAutoMass: 1
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
@@ -143,3 +117,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62697985b070cb046bda2a3111064aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &7844287289863701051
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6359425412924181992}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.046934128, y: -0.14080262}
+  m_Size: {x: 3.4042282, y: 4.715857}
+  m_Direction: 0

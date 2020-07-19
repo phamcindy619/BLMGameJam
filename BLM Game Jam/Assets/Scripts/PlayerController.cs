@@ -85,11 +85,12 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W) && isGrounded)
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-
         if (rb.velocity.y < 0)
             rb.velocity += Vector2.up * Physics2D.gravity * (fallMultiplier - 1) * Time.deltaTime;
         else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.W))
             rb.velocity += Vector2.up * Physics2D.gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
+
+        Debug.Log(isGrounded);
     }
 
     void CheckIfGrounded()
