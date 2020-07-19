@@ -1254,6 +1254,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 24
       objectReference: {fileID: 0}
+    - target: {fileID: 1809460339, guid: 5b079f39bb36ea244920640c913c66a0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4496379812836024600, guid: 5b079f39bb36ea244920640c913c66a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1319,6 +1323,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.75
       objectReference: {fileID: 0}
+    - target: {fileID: 4496379812836024602, guid: 5b079f39bb36ea244920640c913c66a0,
+        type: 3}
+      propertyPath: m_Mass
+      value: 5.295351
+      objectReference: {fileID: 0}
     - target: {fileID: 4496379812836024604, guid: 5b079f39bb36ea244920640c913c66a0,
         type: 3}
       propertyPath: m_Name
@@ -1334,7 +1343,8 @@ PrefabInstance:
       propertyPath: speed
       value: 17
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1939182022, guid: 5b079f39bb36ea244920640c913c66a0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5b079f39bb36ea244920640c913c66a0, type: 3}
 --- !u!1001 &1301760235
 PrefabInstance:

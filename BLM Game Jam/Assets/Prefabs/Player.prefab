@@ -387,7 +387,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 1
-  m_Mass: 7.018774
+  m_Mass: 7.6253057
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -418,6 +418,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   manager: {fileID: 0}
+  prologueLines: []
+  prologueTime: 3
 --- !u!114 &438572717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,24 +447,11 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.09775543, y: -0.037337303}
-  m_Size: {x: 1.2714119, y: 7.0882263}
+  m_Offset: {x: -0.038440958, y: -0.10126379}
+  m_Size: {x: 1.450111, y: 6.803084}
   m_Direction: 0
 --- !u!61 &1809460339
 BoxCollider2D:
-  prologueLines:
-  - My name is Chandler Washington and I am a college student.
-  - Today I will be protesting for Black Lives Matter because I want a future where
-    black people can be protected against police brutality and excessive use of police
-    force.
-  - I wanna grab some supplies on my way to the protest for myself and other protestors
-    who might need it.
-  - We are gonna need things like sunscreen, water, and snacks. I should also bring
-    some hats and face masks, in case some people forgot to bring one of their own.
-  - Protest safety is super important, so make sure you check out a protest safety
-    guide before you go!
---- !u!58 &1939182022
-CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -474,7 +463,7 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2681198, y: -0.042900085}
+  m_Offset: {x: 0.15452868, y: 0.05842638}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -485,38 +474,8 @@ CircleCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.44598, y: 7.106449}
+  m_Size: {x: 3.6740646, y: 7.86563}
   m_EdgeRadius: 0
---- !u!81 &1809460336
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4496379812836024604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e01f88ab670aac76bc4fb6bd268c21a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 3
-  hearts: []
---- !u!70 &8326268020590766457
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4496379812836024604}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.005162382}
-  m_Size: {x: 0.22000001, y: 0.46032476}
-  m_Direction: 0
 --- !u!81 &1809460336
 AudioListener:
   m_ObjectHideFlags: 0
