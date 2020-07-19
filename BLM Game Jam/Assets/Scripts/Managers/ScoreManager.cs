@@ -18,7 +18,6 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI WaterScore;
     public TextMeshProUGUI FoodScore;
 
-    public GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,14 +51,14 @@ public class ScoreManager : MonoBehaviour
                 {"food", FoodScore},
             };
         }
-
+        updateScoreBoard();
     }
     
     private void updateScoreBoard() 
     {
         foreach(var item in scores)
         {
-            textMeshes[item.Key].text = $" x {item.Value}";
+            textMeshes[item.Key].text = item.Value + " / " + endScores[item.Key];
         }
         // End game if scores reached
         if (CheckIfFinish())
@@ -82,10 +81,5 @@ public class ScoreManager : MonoBehaviour
                 return false;
         }
         return true;
-    }
-
-    void FinishGame()
-    {
-        gameManager.FinishGame();
     }
 }
