@@ -1193,6 +1193,11 @@ PrefabInstance:
       propertyPath: lowJumpMultiplier
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4496379812836024605, guid: 5b079f39bb36ea244920640c913c66a0,
+        type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b079f39bb36ea244920640c913c66a0, type: 3}
 --- !u!1001 &1301760235
@@ -2114,7 +2119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49251aa152955664b82cd7fbf2556e8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
 --- !u!114 &1857187777
 MonoBehaviour:
   m_ObjectHideFlags: 0
