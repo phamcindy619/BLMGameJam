@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject gameOverPanel;
     public GameObject youWinPanel;
+    public AudioClip winSound;
 
     void Awake()
     {
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
 
     public void FinishGame()
     {
+        SoundManager.instance.PlaySingle(winSound);
         Time.timeScale = 0;
         youWinPanel.SetActive(true);
     }

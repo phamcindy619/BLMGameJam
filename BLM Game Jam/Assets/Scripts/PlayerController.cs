@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
     private int lineNum;
     public float prologueTime = 3.0f;
 
+    public AudioClip collectSound;
+
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +57,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Collectibles")) 
         {
+            SoundManager.instance.PlaySingle(collectSound);
             other.gameObject.SetActive(false);
         }
         else if (other.gameObject.CompareTag("Obstacle")) 
