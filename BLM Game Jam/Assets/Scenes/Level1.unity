@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28091edaf4866623895bcb1fa1c29c14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: 1
+  scrollSpeed: 0.5
 --- !u!1001 &191731687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2680,9 +2680,19 @@ PrefabInstance:
       propertyPath: parallaxEffectMultiplier
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 2495904059188169812, guid: 09fdaff750e262f4eb748202add5888c,
+        type: 3}
+      propertyPath: scrollSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2495904059696504772, guid: 09fdaff750e262f4eb748202add5888c,
         type: 3}
       propertyPath: parallaxEffectMultiplier
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495904059696504772, guid: 09fdaff750e262f4eb748202add5888c,
+        type: 3}
+      propertyPath: scrollSpeed
       value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2495904059865262591, guid: 09fdaff750e262f4eb748202add5888c,
@@ -2690,9 +2700,19 @@ PrefabInstance:
       propertyPath: parallaxEffectMultiplier
       value: 0.75
       objectReference: {fileID: 0}
+    - target: {fileID: 2495904059865262591, guid: 09fdaff750e262f4eb748202add5888c,
+        type: 3}
+      propertyPath: scrollSpeed
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 2495904060109493127, guid: 09fdaff750e262f4eb748202add5888c,
         type: 3}
       propertyPath: parallaxEffectMultiplier
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495904060109493127, guid: 09fdaff750e262f4eb748202add5888c,
+        type: 3}
+      propertyPath: scrollSpeed
       value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 2495904060564847188, guid: 09fdaff750e262f4eb748202add5888c,
@@ -2760,7 +2780,13 @@ PrefabInstance:
       propertyPath: parallaxEffectMultiplier
       value: 0.4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2819898840250225566, guid: 09fdaff750e262f4eb748202add5888c,
+        type: 3}
+      propertyPath: scrollSpeed
+      value: 0.3
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2495904059696504775, guid: 09fdaff750e262f4eb748202add5888c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 09fdaff750e262f4eb748202add5888c, type: 3}
 --- !u!1001 &3006483418926526086
 PrefabInstance:
