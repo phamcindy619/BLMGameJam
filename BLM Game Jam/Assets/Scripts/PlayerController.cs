@@ -14,9 +14,8 @@ public class PlayerController : MonoBehaviour
 
     private Animator animator;
     private Rigidbody2D rb;
+    public GameObject prologuePanel;
     private TextMeshProUGUI prologueText;
-
-    public Collider2D leftCol;
 
     private HealthComponent hp;
 
@@ -125,6 +124,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            prologuePanel.SetActive(false);
             prologueText.text = "";
         }
     }

@@ -17,8 +17,8 @@ public class GameManager : MonoBehaviour
 
     public void FinishGame()
     {
-        youWinPanel.SetActive(true);
         Time.timeScale = 0;
+        youWinPanel.SetActive(true);
     }
 
     public void GameOver()
