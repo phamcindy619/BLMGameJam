@@ -25,14 +25,16 @@ public class ParralaxBackground : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         Vector3 deltaMovement = cameraTransform.position - lastCameraPosition;
         transform.position += deltaMovement * parallaxEffectMultiplier;
         lastCameraPosition = cameraTransform.position;
 
-        if ((cameraTransform.position.x - transform.position.x) >= textureUnitSizeX) {
-            float offsetPosition = (cameraTransform.position.x - transform.position.x) % textureUnitSizeX;
+        if (Mathf.Abs(cameraTransform.position.x - transform.position.x) >= textureUnitSizeX) {
+            float offsetPosition = (transform.position.x - cameraTransform.position.x) % textureUnitSizeX;
+            Debug.Log(offsetPosition);
+            // offsetPosition = 0f;
             transform.position = new Vector3(cameraTransform.position.x + offsetPosition, transform.position.y);
         }
     }

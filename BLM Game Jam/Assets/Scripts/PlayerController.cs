@@ -99,7 +99,6 @@ public class PlayerController : MonoBehaviour
         else if (rb.velocity.y > 0 && Input.GetAxisRaw("Vertical") <= 0)
             rb.velocity += Vector2.up * Physics2D.gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
 
-        Debug.Log(isGrounded);
     }
 
     void CheckIfGrounded()
