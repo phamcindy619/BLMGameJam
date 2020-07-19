@@ -63,7 +63,6 @@ public class PlayerController : MonoBehaviour
 
     public void Die()
     {
-        Debug.Log("IM DEAD!!!");
         manager.GameOver();
     }
 

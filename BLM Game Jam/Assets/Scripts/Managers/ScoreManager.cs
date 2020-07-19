@@ -17,8 +17,7 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI WaterScore;
     public TextMeshProUGUI FoodScore;
 
-
-
+    public GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -86,6 +85,6 @@ public class ScoreManager : MonoBehaviour
 
     void FinishGame()
     {
-        Debug.Log("Game Finished!");
+        gameManager.FinishGame();
     }
 }
