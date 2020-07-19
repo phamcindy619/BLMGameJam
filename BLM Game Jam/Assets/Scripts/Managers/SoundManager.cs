@@ -51,7 +51,7 @@ public class SoundManager : MonoBehaviour
     void OnNewScene(Scene scene, LoadSceneMode mode)
     {
         volumeButton = GameObject.Find("VolumeButton").GetComponent<Button>();
-        if (volumeOn)
+        if (AudioListener.volume != 0)
             volumeButton.GetComponent<Image>().sprite = volumeOnImage;
         else
             volumeButton.GetComponent<Image>().sprite = volumeOffImage;

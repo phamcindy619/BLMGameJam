@@ -921,6 +921,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: VolumeButton
       objectReference: {fileID: 0}
+    - target: {fileID: 6257911114725481368, guid: dcce0cea02a03bf44bfcb2330bb79b3b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257911114725481368, guid: dcce0cea02a03bf44bfcb2330bb79b3b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8844529650128806075, guid: ddb0e65f35377dd42a18f70181d8dacb,
+        type: 3}
+    - target: {fileID: 6257911114725481368, guid: dcce0cea02a03bf44bfcb2330bb79b3b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257911114725481368, guid: dcce0cea02a03bf44bfcb2330bb79b3b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcce0cea02a03bf44bfcb2330bb79b3b, type: 3}
 --- !u!224 &716011930 stripped
