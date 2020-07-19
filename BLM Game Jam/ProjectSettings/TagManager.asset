@@ -7,6 +7,7 @@ TagManager:
   - Collectibles
   - Obstacle
   - Spawner
+  - Wall
   layers:
   - Default
   - TransparentFX

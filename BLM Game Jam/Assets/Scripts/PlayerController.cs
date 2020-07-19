@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private TextMeshProUGUI prologueText;
 
+    public Collider2D leftCol;
+
     private HealthComponent hp;
 
     // Check whether player is not in the air
@@ -60,11 +62,10 @@ public class PlayerController : MonoBehaviour
         {
             hp.Damage();
         }
-    }
-
-    void OnBecameInvisible()
-    {
-        Die();
+        else if (other.gameObject.CompareTag("Wall"))
+        {
+            Die();
+        }
     }
 
     public void Die()
