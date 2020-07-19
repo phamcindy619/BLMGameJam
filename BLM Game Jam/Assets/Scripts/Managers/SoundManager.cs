@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class SoundManager : MonoBehaviour
     public static SoundManager instance = null;
     // Toggle volume
     private bool volumeOn = true;
+    private Button volumeButton;
 
     // Images
     public Sprite volumeOnImage;
@@ -36,6 +38,25 @@ public class SoundManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnNewScene;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnNewScene;
+    }
+
+    void OnNewScene(Scene scene, LoadSceneMode mode)
+    {
+        volumeButton = GameObject.Find("VolumeButton").GetComponent<Button>();
+        if (volumeOn)
+            volumeButton.GetComponent<Image>().sprite = volumeOnImage;
+        else
+            volumeButton.GetComponent<Image>().sprite = volumeOffImage;
+    }
+
     // Play single sound effect clip
     public void PlaySingle(AudioClip clip)
     {
@@ -51,7 +72,7 @@ public class SoundManager : MonoBehaviour
 
     public void ToggleSound()
     {
-        Button volumeButton = GameObject.Find("VolumeButton").GetComponent<Button>();
+        volumeButton = GameObject.Find("VolumeButton").GetComponent<Button>();
         if (volumeOn)
         {
             AudioListener.volume = 0;
