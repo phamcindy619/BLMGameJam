@@ -71,6 +71,8 @@ public class PlayerController : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal");
         float movement = x * speed;
         rb.velocity = new Vector2(movement, rb.velocity.y);
+
+        animator.SetFloat("speed", Mathf.Abs(movement));
         
         // Flip sprite
         if (rb.velocity.x < 0)

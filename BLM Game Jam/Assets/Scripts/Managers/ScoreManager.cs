@@ -6,6 +6,7 @@ using TMPro;
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
+    public GameManager manager;
     private Dictionary<string, int> endScores;
     private Dictionary<string, int> scores;
 
@@ -35,11 +36,16 @@ public class ScoreManager : MonoBehaviour
 
             endScores = new Dictionary<string, int>
             {
-                {"mask", 7},
-                {"sunscreen", 15},
-                {"hat", 7},
-                {"water", 15},
-                {"food", 15},
+                // {"mask", 7},
+                // {"sunscreen", 15},
+                // {"hat", 7},
+                // {"water", 15},
+                // {"food", 15},
+                {"mask", 1},
+                {"sunscreen", 1},
+                {"hat", 1},
+                {"water", 1},
+                {"food", 1},
             };
             
             textMeshes = new Dictionary<string, TextMeshProUGUI>
@@ -62,7 +68,7 @@ public class ScoreManager : MonoBehaviour
         }
         // End game if scores reached
         if (CheckIfFinish())
-            FinishGame();
+            manager.FinishGame();
     }
 
     public void addScore(string itemName, int incr)

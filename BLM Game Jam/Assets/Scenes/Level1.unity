@@ -1037,6 +1037,11 @@ PrefabInstance:
       propertyPath: FoodScore
       value: 
       objectReference: {fileID: 2028432466}
+    - target: {fileID: 3077246782502435293, guid: 9086253cd16f8f791b106e8746c4307f,
+        type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1857187777}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9086253cd16f8f791b106e8746c4307f, type: 3}
 --- !u!114 &880905001 stripped
@@ -1175,13 +1180,18 @@ PrefabInstance:
     - target: {fileID: 4496379812836024605, guid: 5b079f39bb36ea244920640c913c66a0,
         type: 3}
       propertyPath: jumpForce
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4496379812836024605, guid: 5b079f39bb36ea244920640c913c66a0,
         type: 3}
       propertyPath: manager
       value: 
       objectReference: {fileID: 1857187777}
+    - target: {fileID: 4496379812836024605, guid: 5b079f39bb36ea244920640c913c66a0,
+        type: 3}
+      propertyPath: lowJumpMultiplier
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b079f39bb36ea244920640c913c66a0, type: 3}
 --- !u!1001 &1301760235
