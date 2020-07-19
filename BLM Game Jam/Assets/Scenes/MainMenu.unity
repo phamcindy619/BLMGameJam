@@ -990,6 +990,11 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 6f738099abc7daa43adbe66631a554f3, type: 3}
+    - target: {fileID: 8844529650128806073, guid: ddb0e65f35377dd42a18f70181d8dacb,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8844529650128806075, guid: ddb0e65f35377dd42a18f70181d8dacb,
         type: 3}
       propertyPath: volumeButton
