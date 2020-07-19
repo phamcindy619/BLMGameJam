@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,10 +11,10 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public float fallMultiplier = 3.5f;
     public float lowJumpMultiplier = 3f;
-    // Player's Animator
+
     private Animator animator;
-    // Player's Rigidbody2D component
     private Rigidbody2D rb;
+    private TextMeshProUGUI prologueText;
 
     private HealthComponent hp;
 
@@ -26,14 +25,21 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundLayer;
 
     public GameManager manager;
+    public string[] prologueLines;
+    private int lineNum;
+    public float prologueTime = 3.0f;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        // Get the player's Rigidbody2D
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         hp = GetComponent<HealthComponent>();
+        prologueText = GetComponentInChildren<TextMeshProUGUI>();
+        lineNum = 0;
+        prologueText.text = "";
+        InvokeRepeating("DisplayPrologue", 0, prologueTime);
     }
 
     // Update is called once per frame
@@ -105,6 +111,19 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = false;
             animator.SetBool("isGround", false);
+        }
+    }
+
+    void DisplayPrologue()
+    {
+        if (lineNum < prologueLines.Length)
+        {
+            prologueText.text = prologueLines[lineNum];
+            lineNum++;
+        }
+        else
+        {
+            prologueText.text = "";
         }
     }
 }

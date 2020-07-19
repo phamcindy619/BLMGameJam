@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject prologuePanel;
     public GameObject gameOverPanel;
     public GameObject youWinPanel;
 
@@ -14,19 +13,6 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         gameOverPanel.SetActive(false);
         youWinPanel.SetActive(false);
-        OpenPrologue();
-    }
-
-    void OpenPrologue()
-    {
-        prologuePanel.SetActive(true);
-        Time.timeScale = 0;
-    }
-
-    public void ClosePrologue()
-    {
-        prologuePanel.SetActive(false);
-        Time.timeScale = 1;
     }
 
     public void FinishGame()

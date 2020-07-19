@@ -15,7 +15,7 @@ public class LevelGenerator : MonoBehaviour
     void Start()
     {
         cameraObj = GameObject.Find("Main Camera");
-        InvokeRepeating("Spawn", 2.0f, spawnTime);
+        InvokeRepeating("Spawn", 12.0f, spawnTime);
     }
 
     // Update is called once per frame
