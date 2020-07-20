@@ -413,7 +413,7 @@ MonoBehaviour:
   jumpForce: 12.5
   fallMultiplier: 3.5
   lowJumpMultiplier: 4
-  leftCol: {fileID: 0}
+  prologuePanel: {fileID: 0}
   isGroundedChecker: {fileID: 7354125096332683211}
   checkGroundRadius: 1
   groundLayer:
@@ -432,6 +432,7 @@ MonoBehaviour:
   - Protest safety is super important, so make sure you check out a protest safety
     guide before you go!
   prologueTime: 3
+  collectSound: {fileID: 0}
 --- !u!114 &438572717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -475,18 +476,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.032635033, y: 0.05842638}
+  m_Offset: {x: 0.15530795, y: 0.05842638}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.57, y: 7.23}
+    oldSize: {x: 4, y: 8.18}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.917852, y: 7.86563}
+  m_Size: {x: 4.163198, y: 7.86563}
   m_EdgeRadius: 0
 --- !u!81 &1809460336
 AudioListener:

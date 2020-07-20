@@ -57,6 +57,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Collectibles")) 
         {
+            Debug.Log("uhhh...");
             SoundManager.instance.PlaySingle(collectSound);
             other.gameObject.SetActive(false);
         }
